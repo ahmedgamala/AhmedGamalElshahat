@@ -1,0 +1,102 @@
+﻿/*****************************************************************************nave*******************************************************************************************************/
+div.nav {
+    background-image: url("479.jpg");
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    float: unset;
+    overflow:auto;
+}
+p.nav1 {
+    margin: 20px 10px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: white;
+    overflow: auto;
+}
+p.nav2 {
+    margin: 20px 10px;
+    text-transform: uppercase;
+    font-size: large;
+    color: yellow;
+    overflow: auto;
+}
+/*******************************************************************************side*****************************************************************************************************/
+
+div.side {
+    background-color: gold;
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    width: 20.5%;
+    top: 21%;
+    height: 90%;
+    border-left: 5px dashed red;
+    overflow: auto;
+}
+p.side {
+    font-size: x-large;
+}
+
+label {
+background-color:forestgreen;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    left: 2%;
+    margin: 2%;
+    height: 30px;
+    font-size: x-large;
+    padding:10px 0px;
+    color:white;
+    word-spacing:10px;
+    overflow:auto;
+}
+
+ul {
+    margin:70px 0px 0px 10px;
+    font-size: large;
+   
+}
+/*************************************************************************************dif*********************************************************************************************/
+div.dif {
+    display: inline-block;
+    margin-right: 100px;
+    position: absolute;
+    width: 79.5%;
+    top: 21%;
+    background-color: lemonchiffon;
+    height:90%;
+    overflow:auto;
+}
+dt{
+    color:chocolate;
+    font-size:x-large;
+}
+dd{
+    word-spacing:10px;
+    font-size:x-large;
+}
+/***************************************************************************************down**************************************************************************************************/
+div.dow {
+    background-image: url("td.jpeg");
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 110% ;
+    overflow:auto;
+}
+p.dow {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    overflow: auto;
+}
+
+
+
+

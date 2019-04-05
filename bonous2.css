@@ -1,0 +1,50 @@
+﻿div.header{
+    background-color:red;
+    text-align:right;
+    position:absolute;
+    width:100%;
+    overflow:auto;
+    height:30%;
+    font-size:x-large;
+
+
+    
+}
+p.p1{
+    font-size:xx-large;
+
+}
+div.friends {
+    background-color: yellow;
+    border-radius: 10px;
+    width: 20%;
+    border: 5px solid red;
+    color: forestgreen;
+    position: absolute;
+    top:35%;
+    overflow:auto;
+    margin:auto;
+}
+p.p3,p.p4,p.p6{
+    font-size:x-large;
+
+            
+}
+div.side1, div.side2 {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: 5px solid red;
+    width: 100%;
+    margin: 10px;
+    overflow:auto;
+  
+        
+}
+
+
+div.side{
+    position:absolute;
+    left:30%;
+    top:35%;
+  
+}
