@@ -1,96 +1,75 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title></title>
-   <style>
-       .html1{background-color:darkkhaki;}
-       .html2{background-color:burlywood;}
-       td.html1:hover{background-color:gold;}
-       td.html2:hover{ background-color:salmon;}
-      .css {
-           background-color:green;
+    <style>
+        div.head {
+            background-color: sandybrown;
+            text-align: center;
+            height: 30%;
+            font-size: x-large;
+        }
+        div.cv {
+            font-size: x-large;
+            background-color: aqua;
+            width: 50%;
+            border-radius: 3%;
+            overflow: auto;
+            margin: 3%3%3%25%;
+            border: dashed 5px red;
+        }
+        table {
+            border: dashed 5px green;
+            width: 100%;
+            background-color: darkorange;
+            border-collapse: collapse;
+        }
+        caption {
+            text-align: center;
+            font-size: xx-large;
+            color: red;
+            text-decoration: dashed underline;
+        }
+        tr:hover{
+            background-color:yellow;
 
-       }
-       td.css:hover{
-           background-color:greenyellow;
-       }
-       .csc205{background-color:cornflowerblue;}
-       td.csc205:hover{background-color:aqua;}
-       .meeting{
-           background-color:gray;
-       }
-       td.meeting:hover{background-color:dimgray;}
-       
-      
-   </style>
+        }
+        tr:nth-child(even) {
+            background-color:dodgerblue;
+        }
+        td, th {
+            text-align: center;
+            vertical-align: central;
+            border: solid 5px green;
+        }
+
+    </style>
 </head>
 <body>
-    <table  border="6" width="800" height="600" align="center"  Rules="all" >
-        <caption> <p>spring term 2019 comunication depqartement </p> </caption>
-        <tr >
-            <!---headrow-->
-            <td></td>
-            <th>sunday</th>
-            <th>monday</th>
-            <th>tuesday</th>
-            <th>wedensday</th>
-            <th>thursday</th>
-        </tr>
-        <tr >
-            <!--fris trow-->
-            <th>1 PM</th>
-            <td rowspan="2"  class="html1" ><a href="HTMLpage3.html" #HTML>html</a></td>
-            <td ></td>
-            <td rowspan="2" class="html2"></td>
-            <td rowspan=" 8" class="html2"><a href="HTMLpage3.html" #HTML>HTML HOUR BY APP</a></td>
-            <td rowspan="2" class="html2"><a href="HTMLpage3.html" #HTML>html</a></td>
-        </tr>
-        <tr>
-            <!---second row-->
-            <th>2PM</th>
-            <td rowspan="2" class="meeting">Deptmeeting</td>
+   <div class="head" ><p> WELCOME IN MY PAGE </p></div>
+   <div  class="cv">
+       <p><span >NAME:</span>ahmed gamal elsahat ali</p>
+       <p><span >FACUlTY:</span>faculty of engneering at shoubra</p>
+       <p><span >DEPARTMENT:</span>Communication,Electronics and computer</p>
+       <p  style="text-decoration:underline;color:red;font-size:xx-large; display:inline;">IMAGE:</p>
+       <img src="ahmed.jpg" height="100" width="100"  style="border-radius:50%;"/>
+       
+    </div>
+   <table>
+       <caption>myprojects:</caption>
+       <tr><th> frist project</th><td><a href="table.html">table page</a></td></tr>
+       <tr><th> second project</th><td><a href="quiz.html">page1training</a></td></tr>
+       <tr><th> thrid project</th><td><a href="bonous1.html">page2training</a></td></tr>
+       <tr><th> fourth project</th><td><a href="bonous2.html">page3training</a></td></tr>
 
 
-        </tr>
-        <tr>
-            <!----thrid row-->
-            <th>3PM</th>
-            <td rowspan="3" class="css"><a href="HTMLpage3.html" #css>css</a></td>
-            <tD rowspan="3" class="css"><a href="HTMLpage3.html" #css>css</a></tD>
-            <td rowspan="3" class="css"><a href="HTMLpage3.html" #css>css</a></td>
-            
-        </tr>
-        <tr>
-            <!---four row -->
-            <th>4PM</th>
 
-        </tr>
-        <tr>
-            <!----five row -->
-            <th>5PM</th>
-            <td rowspan="3"class="meeting">EC meeting</td>
-        </tr>
-        <tr>
-            <!----six row -->
-            <th>6PM</th>
-            <td rowspan="3"class="csc205" >csc205</td>
-            <td rowspan="3" class="csc205" >csc205</td>
-            <td rowspan="3" class="csc205">csc205</td>
-        </tr>
-        <tr>
-            <!----seven row -->
-            <th>7PM</th>
-        </tr>
-        <tr>
-            <!---eight row -->
-            <th>8PM</th>
-            <td></td>
-        </tr>
 
-    </table>
-    <a href="bonous1.html"><p> project2</p></a>
+
+
+   </table>
         
    
 
