@@ -1,0 +1,278 @@
+﻿body {
+  background-color:gray;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-repeat: round;
+    background-size: cover;
+    width:1347px;
+    height:440px;
+   
+}
+
+
+.nav {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    background: transparent;
+    background: rgba(0,0,0,.7);
+    height:20%;
+    border-bottom:solid 1px orange;
+   overflow-x:auto;
+}
+
+.log.inputBox {
+}
+
+.nav ul {
+    margin-top: 0%;
+    padding: 0;
+    list-style: none;
+   
+}
+
+.nav li {
+   
+    float: left;
+    
+}
+
+.nav ul li a {
+    background: #142b47;
+    text-decoration: none;
+    width: 0%;
+    display:inline;
+    text-align: center;
+    color: yellow;
+    font-size: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    overflow:auto;
+}
+
+.nav li a:hover {
+ 
+    color: orange;
+    font-size: 19px;
+   
+}
+
+.search {
+    float: right;
+   margin-top:1%;
+    margin-left:0%;
+    float:right;
+    
+   
+   
+}
+
+.nav button {
+    background: orange;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 8px;
+    font-family: sans-serif;
+    border: none;
+    font-size: 16px;
+    margin: 0;
+   
+}
+
+input[type=search] {
+   
+    padding: 8px;
+    font-size: 16px;
+    font-family: sans-serif;
+    width:40%;
+    background: transparent;
+    color: yellow;
+    border: solid 1px orange;
+    outline: none;
+    border-radius: 10px 0px 0px 0px;
+    width: 70%;
+    margin: 0;
+    height:5%;
+
+}
+.mySidebar {
+    position: absolute;
+    width: 20%;
+    height: 145%;
+    background: transparent;
+    background: rgba(0,0,0,.7);
+    margin: 0;
+    border-right: dashed 2px orange;
+    overflow: hidden;
+    display: none;
+    font-size: x-large;
+}
+.mobile, .pro2, .pro3, .pro4, .pro5, .pro6 {
+    width: 40%;
+    background: transparent;
+    background: rgba(0,0,0,.5);
+    border: solid 1px orange;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    display: inline-block;
+    height: 5%;
+    color:yellow;
+}
+.container1, .container2, .container3 {
+    position: relative;
+    left: 13%;
+    width: 75%;
+    margin: 2%0%0%4%;
+    display: flex;
+    justify-content:space-around;
+
+}
+.pro2, .pro4, .pro6 {
+    margin-left: 15%;
+}
+.mobile:hover, .pro2:hover, .pro3:hover, .pro4:hover, .pro5:hover, .pro6:hover {
+        background-color: aqua;
+        color:black;
+    }
+.vide video {
+    margin: 0px;
+    width: 20%;
+   
+    border-radius: 30%;
+}
+.acctive {
+    background-color: orange;
+    color: white;
+    width: 10%;
+    display: block;
+    padding-left:3%;
+}
+.acctive h1{
+    color:aliceblue;
+}
+.p1 {
+    margin-left:2%;
+}
+.productside{
+    margin:10%;
+    background-color:orange;
+    font-size:200%;
+    color:white;
+   
+   
+}
+.clicside {
+    width: 100%;
+    display: block;
+    width: 50%;
+}
+.vide{
+ position:absolute;
+    
+}
+.Sidebar button{
+    width:50%;
+
+}
+.mySidebar button {
+    width: 100%;
+    color: white;
+    background-color:forestgreen;
+    height:6%;
+    border:0px;
+}
+    .mySidebar button:hover{
+        background-color:orange;
+    }
+    .mySidebar a {
+        background-color: antiquewhite;
+        text-decoration: none;
+        display: block;
+        color: red;
+    }
+    .mySidebar a:hover {
+        background-color: orange;
+        font-size: xX-large;
+    }
+
+.products{
+    display:none;
+    margin-top:0px;
+}
+.mobile img {
+    width:40%;
+    height:inherit;
+
+}
+.disc{
+    margin:0%;
+ 
+}
+.mobile ul {
+    width:60%;
+
+}
+.mobile{
+    display:flex;
+    justify-content:space-around;
+}
+    .mobile ul {
+        text-decoration: none;
+        list-style:none;
+        margin:0%;
+        padding:0%;
+     
+       
+
+    }
+    .mobile button {
+        width: 40%;
+        color:white;
+        border-radius: 5%;
+        border: 0px;
+        height: 30%;
+        margin: 1%;
+        font-size:large;
+        
+    }
+    .mobile button:hover{
+        background-color:orange;
+        font-size:xx-large;
+    }
+    .buy{
+        background-color:red;
+    }
+.more {
+    background-color: #4362f4;
+}
+table {
+    width: 100%;
+    background-color: orange;
+    background: transparent;
+    background-color: green;
+    color: white;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 3%;
+    border-right: none;
+    border-left: none;
+}
+td, th {
+    border: 1px solid orange;
+    height: 30px;
+    border-right: none;
+    border-left: none;
+}
+tr:nth-child(even) {
+    background-color:rgba(0,0,0,.7);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+body {
+    background-image: url(gem.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-repeat:round;
+    background-size: cover;
+}
+
+
+.nav {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+    text-align: center;
+    background: transparent;
+    background: rgba(0,0,0,.6);
+}
+    .log.inputBox {
+
+    }
+
+.nav ul {
+    margin-top:0%;
+    padding: 0;
+    list-style: none;
+    line-height:40% ; 
+   
+}
+
+.nav li {
+    float:left;
+   margin-left:3%;
+    
+}
+.nav ul li a{
+    background: #142b47 ;
+    text-decoration: none ;
+    width:0% ;
+    display: inline;
+    text-align: center ;
+    color:yellow ;
+    font-size:100%;
+    font-family: sans-serif ;
+    letter-spacing:0.5px;
+}
+.nav li a:hover{
+   /* color: #fff;*/
+    color: orange;
+    opacity: ;
+    font-size: 19px ;
+}
+.login {
+   float:right;
+    margin-top: 0%;
+    margin-right: 0%;
+    
+    
+}
+button {
+    background: orange;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 8px;
+    font-family: sans-serif;
+    border: none;
+    font-size: 16px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    padding: 8px;
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 20%;
+    background: transparent;
+    color:yellow;
+    border: solid 1px orange;
+    outline:none;
+    border-radius:10px;
+}
+    .box {
+        position: relative;
+        top: 8%;
+        left: 10%;
+        width: 50%;
+        padding: 2%;
+        background: rgba(0,0,0,.6);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.5);
+        border-radius: 10px;
+        margin-left: 10%;
+    }
+
+.box h2{
+    color: #fff;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+      
+}
+
+.box .inputBox{
+    position: relative ;
+}
+    .box .inputBox input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: orange;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid orange;
+        outline: none;
+        background: transparent;
+        display: inline;
+    }
+    .box .inputBox label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        letter-spacing: 1px;
+        padding: 10px 0;
+        font-size: 16px;
+        color: yellow;
+        pointer-events: none;
+        transition: 1.4s;
+    }
+
+    .box .inputBox input:focus ~ label,
+    .box .inputBox input:valid ~ label {
+        top: -18px;
+        left: 0;
+        color: orange;
+        font-size: 12px;
+    }
+     .gender{
+         border-bottom: 2px solid orange;
+         color:yellow;
+     }
+
+.box input[type="submit"]{
+    
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background:  orange;
+    padding: 10px 20px ;
+    cursor: pointer;
+    border-radius: 10px ;
+    
+}
+/*****************************************home style ******************************************************************/
+
+
+
+
+
