@@ -1,25 +1,24 @@
 body {
-  background-color:gray;
+    width: 1200px;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background-repeat: round;
     background-size: cover;
-    width:100%;
-    height:100%;
+    height: 100%;
 }
 
 
 .nav {
-    width: 100%;
+   width:100%;
     background-color: black;
     text-align: center;
     background: transparent;
     background: rgba(0,0,0,.7);
-    height:13%;
-    border-bottom:solid 1px orange;
-   overflow-x:auto;
-
+    border-bottom: solid 1px orange;
+    position:fixed;
+    top: 0%;
+    z-index: 2;
 }
 
 .log.inputBox {
@@ -100,37 +99,84 @@ input[type=search] {
 .mySidebar {
     position: fixed;
     width: 20%;
-    height:100%;
+    height: 100%;
     background: transparent;
     background: rgba(0,0,0,.7);
     margin: 0;
     border-right: dashed 2px orange;
-    overflow:auto;
+    overflow: auto;
     display: none;
     font-size: x-large;
-    float:left;
-    z-index:1;
+    float: left;
+    z-index: 1;
+    top:0%;
+}
+.Sidebar button {
+    width: 50%;
+}
+
+.mySidebar button {
+    width: 100%;
+    color: white;
+    background-color: initial;
+    height: 6%;
+    border: 0px;
+}
+
+.mySidebar button:hover {
+        background-color:green;
+    }
+
+.mySidebar a {
+    background-color: antiquewhite;
+    text-decoration: none;
+    display: block;
+    color: red;
+}
+
+.mySidebar a:hover {
+        background-color: orange;
+        font-size: xX-large;
+
+ }
+.products, .Electronicssh, .Suitssh, .Dressessh, .Shoessh, .bookssh, .Toyssh, .kitchensh {
+    display: none;
+    margin-top: 0px;
+}
+#clos {
+  background-color:orange;
+}
+#log{
+    background-color:orange;
+    font-size:x-large;
+}
+#categories{
+    background-color:green;
+}
+.sidcategries{
+    background-color:lightgreen;
 }
 .mobile, .pro2, .pro3, .pro4, .pro5, .pro6 {
     width: 40%;
     background: transparent;
-    background: rgba(0,0,0,.5);
+    background: hsl(0, 100%, 15%);
     border: solid 1px orange;
     border-radius: 10px;
     position: relative;
     top: 50%;
     display: inline-block;
     height: 5%;
-    color:yellow;
+    color: rgb(216, 210, 210);
 }
-.container1, .container2, .container3 {
+.container1, .container2, .container3, .container4 {
     position: relative;
-    left: 13%;
-    width: 75%;
+    left: 28%;
+    width: 77%;
     margin: 2%0%0%4%;
     display: flex;
-    justify-content:space-around;
-
+    top: 30%;
+    justify-content: space-around;
+    background-color:yellow;
 }
 .pro2, .pro4, .pro6 {
     margin-left: 15%;
@@ -140,10 +186,8 @@ input[type=search] {
         color:black;
     }
 .vide video {
-    margin: 0px;
-    width: 20%;
-   
-    border-radius: 30%;
+    margin:0px;
+    width:30%;
 }
 .acctive {
     background-color: orange;
@@ -175,39 +219,12 @@ input[type=search] {
  position:absolute;
     
 }
-.Sidebar button{
-    width:50%;
 
-}
-.mySidebar button {
-    width: 100%;
-    color: white;
-    background-color:forestgreen;
-    height:6%;
-    border:0px;
-}
-    .mySidebar button:hover{
-        background-color:orange;
-    }
-    .mySidebar a {
-        background-color: antiquewhite;
-        text-decoration: none;
-        display: block;
-        color: red;
-    }
-    .mySidebar a:hover {
-        background-color: orange;
-        font-size: xX-large;
-    }
 
-.products{
-    display:none;
-    margin-top:0px;
-}
+
 .mobile img {
-    width:40%;
-    height:inherit;
-
+    width: 40%;
+    height: inherit;
 }
 .disc{
     margin:0%;
@@ -242,7 +259,7 @@ input[type=search] {
     }
     .mobile button:hover{
         background-color:orange;
-        font-size:xx-large;
+       
     }
     .buy{
         background-color:red;
@@ -254,7 +271,7 @@ table {
     width: 100%;
     background-color: orange;
     background: transparent;
-    background-color: green;
+    background-color: black;
     color: white;
     border-collapse: collapse;
     text-align: center;
@@ -275,4 +292,106 @@ tr:nth-child(even) {
     position: fixed;
     bottom: 0;
 }
+.container1{
+    margin-top:8%;
+}
+span{
+    text-decoration:line-through;
+    color:black;
+}
+.visable{
+    background-color:forestgreen;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+.buyinfo input[type=submit], .buyinfo input[type=button] {
+    width: 50%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buyinfo input[type=button] {
+    background-color: cornflowerblue;
+}
+
+.buyinfo input[type=submit] {
+    background-color: red;
+}
+
+  .buyinfo input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+.buyinfo input[type=button]:hover {
+    background-color: #45a049;
+}
+
+div.buyinfo {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 24%;
+    top: 30%;
+}
+.about {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left :24%;
+    top:30%;
+    height:30%;
+}
+
+.comment{
+    background-color:green;
+    top:20%;
+}
+.about button {
+    width: 49%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttoncom {
+    background-color: cornflowerblue;
+    width: 45%;
+
+}
+
+.buttonclos {
+    background-color: red;
+    width:45%;
+
+}
+
+.about button[type=button]:hover {
+        background-color: #45a049;
+
+    }
+.shcomment {
+    background-color: #45a049;
+}
