@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>gemy phone store</title>
+    <link rel="stylesheet" type="text/css" href="phone.css">
+</head>
+<body>
+    <!----------------------------------------------------buy info---------------------------------------------->
+    <div class="buyinfo" id="buyinfo">
+        <form action="#">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="lname">adress</label>
+            <input type="text" id="adress" name="adress" placeholder="your adress">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <label for="country">your cridet card</label>
+            <input type="number" id="cridetnumber" name="cridetnumber">
+            <label for="country">quntity</label>
+            <input type="number" id="quintity" name="cridetnumber">
+
+
+            <input type="submit" value="Submit"><input onclick="buyinfohide()" type="button" value="close">
+        </form>
+    </div>
+    <!------------------------------------------------------------------------about---------------------------------------------------------->
+    <div class="about" id="about">
+        <div class="form">
+
+            <form name="about">
+                <input type="text" name="comment " id="com" value="" placeholder=" please,write your Review about this product"><br />
+                <button class="buttoncom" type="button" onclick="showcomment() ">Submit&Show Previous Review </button>
+                <button class="buttonclos" type="button" onclick=" abouthide() ">Close</button>
+            </form>
+
+        </div>
+
+        <div class="shcomment" id="shcomment">
+
+
+        </div>
+    </div>
+    <!--------------------------------------------------------------------categories--------------------------------------------------------------------->
+    <div id="Sidebar" class="mySidebar">
+        <button id="clos" onclick="close_side()">Close side &times;</button>
+        <button id="categories">product categories</button>
+        <button id="Electronics" onclick="showElectronics()">Electronics &#x21E9</button>
+        <div id="Electronicssh" class="Electronicssh">
+            <button onclick="hideElectronics()">Electronics &#8679</button>
+            <a href="phone.html">computers</a>
+            <a href="phone.html">phones</a>
+            <a href="cameres.html">cameres</a>
+            <a href="phone.html">telvesiones</a>
+        </div>
+        <button id="Suits" onclick="Suitsshow()">Suits &#x21E9</button>
+        <div id="Suitssh" class="Suitssh">
+            <button onclick="Suitshide()">Suits &#8679</button>
+            <a href="phone.html">men suits</a>
+            <a href="phone.html">women suits</a>
+            <a href="phone.html">childern suits</a>
+        </div>
+        <button id="Dresses" onclick="showDresses()">Dresses &#x21E9</button>
+        <div id="Dressessh" class="Dressessh">
+            <button onclick="hideDresses()">Dresses &#8679</button>
+            <a href="phone.html">women's dresses</a>
+            <a href="phone.html">girl'dresses</a>
+            <a href="phone.html">children'dresses</a>
+        </div>
+        <button id="Shoes" onclick="showShoes()">Shoes&#x21E9</button>
+        <div id="Shoessh" class="Shoessh">
+            <button onclick="hideShoes()">Shoes&#8679</button>
+            <a href="phone.html">Men Shoes</a>
+            <a href="phone.html">women Shoes </a>
+
+        </div>
+        <button id="books" onclick="showbooks()">books&#x21E9</button>
+        <div id="bookssh" class="bookssh">
+            <button onclick="hidebooks()">products &#8679</button>
+            <a href="phone.html">stories </a>
+            <a href="phone.html">Novels</a>
+
+        </div>
+        <button id="Toys" onclick="showToys() ">Toys and Games&#x21E9</button>
+        <div id="Toyssh" class="Toyssh">
+            <button onclick="hideToys() ">Toys and Games &#8679</button>
+            <a href="phone.html">girls toyes</a>
+            <a href="phone.html">boyes toyes</a>
+        </div>
+        <button id="kitchen" onclick="showkitchen()">kitchen&#x21E9</button>
+        <div id="kitchensh" class="kitchensh">
+            <button onclick="hidekitchen()">kitchen&#x21E9&#8679</button>
+            <a href="phone.html">dishes</a>
+            <a href="phone.html">glasess</a>
+            <a href="phone.html">electrical dvices</a>
+        </div>
+        <form action="log.html">
+            <button id="log">logout</button>
+        </form>
+    </div>
+    <!------------------------------------------------------------------nav------------------------------------------------------------------------->
+    <nav class="nav" id="nav" style="margin-left:0%">
+        <ul>
+            <li class="acctive" id="acctive"><button onclick="open_side()" class="clicside" id="openNav"><h1>&#9776;</h1></button></li>
+            <li class="p1"><a href="home.html"><h1>HOME </h1></a></li>
+            <li class="p1"><a href="profile.html"><h1>PROFILE</h1></a> </li>
+            <li style="display:inline-block; width:5%; margin:0%;"><img src="ahmed.jpg" style="border-radius:510Px;width:50px;height:50px; margin-top:10%;" /></li>
+
+            <li class="search" style="float:right;">
+                <div class="search">
+                    <input type="search" placeholder="search" name="search">
+                    <button type="button">search</button>
+                </div>
+            </li>
+
+
+        </ul>
+    </nav>
+    <!-----------------------------------------------products--------------------------------------------------------------------------------------->
+
+    <div class="container" id="containerh">
+        <div class="poduct1">
+            <img src="oop.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">OOP Y9 prime(2019)</li>
+                <li> 6.26 inch 32GB</li>
+                <li> 5 MP Back Cameras</li>
+                <li>  25 MP Front Camera</li>
+                <li>Processor MediaTek Helio P60 </li>
+                <li> RAM 4GB </li>
+                <li class="visable">100$<span>99$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+        <div class="poduct2">
+            <img src="mobile2.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">Huawei Y5 Lite موبايل 5.45 بوصة - 16 </li>
+                <li> 6.26 inch 32GB</li>
+                <li> 5 MP Back Cameras</li>
+                <li>  25 MP Front Camera</li>
+                <li>Processor MediaTek Helio P60 </li>
+                <li> RAM 4GB </li>
+                <li class="visable">300$<span>400$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+        <div class="poduct3">
+            <img src="mobile3.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">apple آيفون X- 64 جيجا - رمادي</li>
+                <li> 6.26 inch 32GB</li>
+                <li> 5 MP Back Cameras</li>
+                <li>  25 MP Front Camera</li>
+                <li>Processor MediaTek Helio P60 </li>
+                <li> RAM 4GB </li>
+                <li class="visable">600$<span>700$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container" id="container1h">
+        <div class="poduct1">
+            <img src="mobile5.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">amsung Galaxy J6</li>
+                <li> 32 جيجا </li>
+                <li> 4G</li>
+                <li> رمادي </li>
+                <li>كارت  </li>
+                <li> شحن 50 جنيه أورانج</li>
+                <li class="visable">150$<span>160$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+
+        <div class="poduct3">
+            <img src="phone8.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">G-Tide G1</li>
+                <li> SIM‎‎:‎‎ Dual SIM</li>
+                <li> Screen Size‎‎:‎‎ 1.8 Inches</li>
+                <li>  Camera</li>
+                <li>BT & Fm Radio </li>
+                <li> Audio & Video playe</li>
+                <li class="visable">40$<span>50$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+        <div class="poduct4">
+            <img src="mobile7.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">Nokia 106)</li>
+                <li> ثنائى الشريحة </li>
+                <li>  رمادي غامق</li>
+                <li>يكل قوى من بوليمير بولي الكربونات</li>
+                <li>مقبس سماعة أذن 3.5 مم و منفذ شحن مايكرو يو اس بى </li>
+                <li>شاشة QQVGA 1.8 بوصة</li>
+                <li class="visable">50$<span>56$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+    </div><div class="container" id="container2h">
+        <div class="poduct1">
+            <img src="oop.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">OOP Y9 prime(2019)</li>
+                <li> 6.26 inch 32GB</li>
+                <li> 5 MP Back Cameras</li>
+                <li>  25 MP Front Camera</li>
+                <li>Processor MediaTek Helio P60 </li>
+                <li> RAM 4GB </li>
+                <li class="visable">100$<span>99$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+        <div class="poduct2">
+            <img src="mobile9.jpgg" width="100" height="200" />
+            <ul>
+                <li class="visable">Smtel KR18</li>
+                <li>شاشه 1.8 بوصه</li>
+                <li>2 شريحة اتصالراديوهزازقوي</li>
+                <li>  هزازقوي</li>
+                <li>اميرا خلفيه واماميه للسيلفي</li>
+                <li> طارية 850 مللي امبير </li>
+                <li class="visable">100$<span>99$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+
+        <div class="poduct4">
+            <img src="mobile 11.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">OXiaomi </li>
+                <li> 6 بوصة IPS HD+ Dot Drop شاشة ل</li>
+                <li> سعة تخزين 64 جيجا، بطاقة MicroSD حت</li>
+                <li>  اميرا خلفية 12+2 ميجا بكسل، كاميرا أم</li>
+                <li>عالج ثماني النواه‏:‏ 4x1.8 جيجا هيرتز + 3 جيجا </li>
+                <li> طارية ليثيوم‎-بوليمر بقوة 4000 مللي أمبير في ال </li>
+                <li class="visable">150$<span>160$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+    </div><div class="container" id="container3h">
+
+        <div class="poduct2">
+            <img src="mobile6.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">Xiaomi موبايل ريدمي 7</li>
+                <li> 6.26 بوصة</li>
+                <li>164G - أسود</li>
+                <li>اميرا خلفية 12+2 ميجا بكسل </li>
+                <li> مُعالج ثماني النواة‏:‏ 4x1.8 جيجا هيرتز </li>
+                <li class="visable">100$<span>99$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+        <div class="poduct3">
+            <img src="mobile10.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">Smtel KR18</li>
+                <li>موبايل ثنائي الكاميرا و الشريحة </li>
+                <li>شاشه 1.8 بوصه/li>
+                <li> كايرا خلفية</li>
+                <li>كاميرا امامية </li>
+                <li> مشغل وساءط </li>
+                <li class="visable">60$<span>70$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+        <div class="poduct4">
+            <img src="mobile4.jpg" width="100" height="200" />
+            <ul>
+                <li class="visable">Vetron موبايل</li>
+                <li> 6.26 inch 32GB</li>
+                <li> 5 MP Back Cameras</li>
+                <li>  25 MP Front Camera</li>
+                <li>Processor MediaTek Helio P60 </li>
+                <li> RAM 4GB </li>
+                <li class="visable">100$<span>99$</span> </li>
+                <li><button class="more" onclick="aboutshow()">Rviews</button><button onclick="    buyinfoshow()" class="buy">BUY</button></li>
+            </ul>
+        </div>
+    </div>
+    <!--------------------------------------------------------------footer----------------------------------------------------------------------->
+    <footer>
+        <table id="footr" class="footr">
+            <tr><th colspan="3">if you have problem contact with us on our emails or our phones&copy;</th></tr>
+            <tr><th>our emails</th><td>ahmeg314@gmail.com</td><td>ahmeg314@yahoo.com</td></tr>
+        </table>
+    </footer>
+</body>
+</html>
+<script type="text/javascript" src="phone.js"></script>
+

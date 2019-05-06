@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>gemy online store profile</title>
+    <link rel="stylesheet" type="text/css" href="phone.css">
+</head>
+<body>
+    <!--------------------------------------------------------------------categories--------------------------------------------------------------------->
+    <div id="Sidebar" class="mySidebar">
+        <button id="clos" onclick="close_side()">Close side &times;</button>
+        <button id="categories">product categories</button>
+        <button id="Electronics" onclick="showElectronics()">Electronics &#x21E9</button>
+        <div id="Electronicssh" class="Electronicssh">
+            <button onclick="hideElectronics()">Electronics &#8679</button>
+            <a href="computer.html">combuters</a>
+            <a href="phone.html">phones</a>
+            <a href="cameres.html">cameres</a>
+            <a href="television.html">telvesiones</a>
+        </div>
+        <button id="Suits" onclick="Suitsshow()">Suits &#x21E9</button>
+        <div id="Suitssh" class="Suitssh">
+            <button onclick="Suitshide()">Suits &#8679</button>
+            <a href="mensuits.html">men suits</a>
+            <a href="#">women suits</a>
+            <a href="#">childern suits</a>
+        </div>
+        <button id="Dresses" onclick="showDresses()">Dresses &#x21E9</button>
+        <div id="Dressessh" class="Dressessh">
+            <button onclick="hideDresses()">Dresses &#8679</button>
+            <a href="women.html">women's dresses</a>
+            <a href="#">girl'dresses</a>
+            <a href="#">children'dresses</a>
+        </div>
+        <button id="Shoes" onclick="showShoes()">Shoes&#x21E9</button>
+        <div id="Shoessh" class="Shoessh">
+            <button onclick="hideShoes()">Shoes&#8679</button>
+            <a href="menshow.html">Men Shoes</a>
+            <a href="#">women Shoes </a>
+
+        </div>
+        <button id="books" onclick="showbooks()">books&#x21E9</button>
+        <div id="bookssh" class="bookssh">
+            <button onclick="hidebooks()">products &#8679</button>
+            <a href="#">stories </a>
+            <a href="#">Novels</a>
+
+        </div>
+        <button id="Toys" onclick="showToys() ">Toys and Games&#x21E9</button>
+        <div id="Toyssh" class="Toyssh">
+            <button onclick="hideToys() ">Toys and Games &#8679</button>
+            <a href="#">girls toyes</a>
+            <a href="#">boyes toyes</a>
+        </div>
+        <button id="kitchen" onclick="showkitchen()">kitchen&#x21E9</button>
+        <div id="kitchensh" class="kitchensh">
+            <button onclick="hidekitchen()">kitchen&#x21E9&#8679</button>
+            <a href="#">dishes</a>
+            <a href="#">glasess</a>
+            <a href="#">electrical dvices</a>
+        </div>
+        <form action="log.html">
+            <button id="log">logout</button>
+        </form>
+    </div>
+    <!------------------------------------------------------------------nav------------------------------------------------------------------------->
+    <nav class="nav" id="nav" style="margin-left:0%">
+        <ul>
+            <li class="acctive" id="acctive"><button onclick="open_side()" class="clicside" id="openNav"><h1>&#9776;</h1></button></li>
+            <li class="p1"><a href="home.html"><h1>HOME </h1></a></li>
+            <li class="p1"><a href="profile.html"><h1>PROFILE</h1></a> </li>
+            <li style="display:inline-block; width:5%; margin:0%;"><img src="ahmed.jpg" style="border-radius:510Px;width:50px;height:50px; margin-top:10%;" /></li>
+
+            <li class="search" style="float:right;">
+                <div class="search">
+                    <input type="search" placeholder="search" name="search">
+                    <button type="button">search</button>
+                </div>
+            </li>
+
+
+        </ul>
+    </nav>
+    <!--------------------------------------------------------------profile info------------------------------------------------->
+    <div class="container" id="containerp">
+        <div class="cv">
+            <img src="ahmed.jpg" height="100" width="100" />
+            <p><span>Name</span>:ahmed gamal elsahat ali</p>
+            <p><span>Country</span>:egypt</p>
+            <p><span>Adress</span>:kafr shoker qaliobeya </p>
+            <p><span>eEmail</span>:ahmeg314@gmail.com</p>
+        </div>
+        <!--------------------------------------------------------history------------------------------------------------------------>
+        <div class="history">
+            <table id="history">
+                <caption>History of your shoping</caption>
+                <tr><th>Your Shoping</th> <th>Day</th> </tr>
+                <tr><td> Buy Mobile with 400$</td> <td>saturday</td></tr>
+                <tr><td>Buy  Dress with 50$</td> <td>sunday</td></tr>
+                <tr><td>Buy Tv with 100$</td> <td>monday</td></tr>
+                <tr><td>you didn’t buy eny thing</td> <td>tuesday</td></tr>
+                <tr><td>you didn’t buy eny thing</td> <td>wendsday</td></tr>
+                <tr><td>you didn’t buy eny thing</td> <td>thursday</td></tr>
+                <tr><td>you didn’t buy eny thing</td> <td>friday</td></tr>
+                <tr><td> Buy labtop with 400$</td> <td>friday</td></tr>
+            </table>
+        </div>
+    </div>
+    <!--------------------------------------------------------------footer----------------------------------------------------------------------->
+    <footer>
+        <table id="footr" class="footr">
+            <tr><th colspan="3">if you have problem contact with us on our emails or our phones&copy;</th></tr>
+            <tr><th>our emails</th><td>ahmeg314@gmail.com</td><td>ahmeg314@yahoo.com</td></tr>
+        </table>
+    </footer>
+
+</body>
+</html>
+<script type="text/javascript" src="profile.js"></script>
+   
+
